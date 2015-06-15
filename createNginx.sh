@@ -29,7 +29,7 @@ else #without nexus
     -e GERRIT_HOST=${GERRIT_HOST} \
     -e JENKINS_URI=${JENKINS_NAME} \
     -e JENKINS_HOST=${JENKINS_HOST} \
-    -e REDMINE_URI=${REDMINE_URI} \
+    -e REDMINE_URI=${REDMINE_NAME} \
     -e REDMINE_HOST=${REDMINE_HOST} \
     -d ${NGINX_IMAGE_NAME}
 fi
