@@ -9,9 +9,9 @@ NEXUS_NAME=${NEXUS_NAME:-nexus}
 NGINX_IMAGE_NAME=${NGINX_IMAGE_NAME:-nginx}
 NGINX_NAME=${NGINX_NAME:-nginx-proxy}
 
-GERRIT_HOST=$(docker inspect -f '{{.Node.Ip}}' ${GERRIT_NAME})
-JENKINS_HOST=$(docker inspect -f '{{.Node.Ip}}' ${JENKINS_NAME})
-REDMINE_HOST=$(docker inspect -f '{{.Node.Ip}}' ${REDMINE_NAME})
+GERRIT_HOST=$(docker inspect -f '{{.Node.IP}}' ${GERRIT_NAME})
+JENKINS_HOST=$(docker inspect -f '{{.Node.IP}}' ${JENKINS_NAME})
+REDMINE_HOST=$(docker inspect -f '{{.Node.IP}}' ${REDMINE_NAME})
 
 # Start proxy
 if [ ${#NEXUS_WEBURL} -eq 0 ]; then #proxy nexus
